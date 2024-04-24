@@ -1,0 +1,91 @@
+[
+	{
+		"id": 1,
+		"title": "Memoria Ram",
+		"descripcion": "Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black",
+		"price": 39550.00,
+		"thumbnail": "https://acortar.link/HgeG0G",
+		"code": 9542,
+		"stock": 10
+	},
+	{
+		"id": 2,
+		"title": "Notebook",
+		"descripcion": "Notebook Gamer Acer Nitro 5 15.6",
+		"price": 465990.00,
+		"thumbnail": "https://acortar.link/SLS5hS",
+		"code": 14320,
+		"stock": 3
+	},
+	{
+		"id": 3,
+		"title": "Gabinete",
+		"descripcion": "Gabinete Kolink Inspire K3 RGB  M-ATX Vidrio Templado",
+		"price": 25700.00,
+		"thumbnail": "https://acortar.link/BmqxdQ",
+		"code": 10429,
+		"stock": 5
+	},	
+    {
+		"id": 4,
+		"title": "Auriculares",
+		"descripcion": "Auriculares Gamer Wesdar GH31 Black RGB RCA Y-Adapter",
+		"price": 2999.99,
+		"thumbnail": " https://shre.ink/ldVX",
+		"code": 14517,
+		"stock": 20
+	},
+    {
+		"id": 5,
+		"title": "Procesador",
+		"descripcion": "Procesador AMD Ryzen 9 5950X 4.9GHz Turbo AM4 - No incluye Cooler",
+		"price": 388900.00,
+		"thumbnail": "https://shre.ink/ldiw",
+		"code": 11022,
+		"stock": 4
+	},
+    {
+		"id": 6,
+		"title": "Silla Gamer",
+		"descripcion": "Silla Gamer Vertagear Racing Series PL-4500 Crystals from Swarovski",
+		"price": 359100.00,
+		"thumbnail": "https://shre.ink/ldiQ",
+		"code": 13786,
+		"stock": 7
+	},
+    {
+        "id": 7,
+		"title": "Fuente de alimentacion",
+		"descripcion": "Fuente ASUS TUF 550W 80 Plus Bronze 550B",
+		"price": 39000.00,
+		"thumbnail": "https://shre.ink/ldFR",
+		"code": 11265,
+		"stock": 8
+    },
+    {
+        "id": 8,
+		"title": "Mother",
+		"descripcion": "Mother Asrock X670E Taichi Carrara AM5",
+		"price": 418600.00,
+		"thumbnail": "https://shre.ink/ldFs",
+		"code": 14199,
+		"stock": 1
+    },
+    {
+        "id": 9,
+		"title": "Placa de video",
+		"descripcion": "Placa de Video MSI GeForce RTX 3090 24GB GDDR6X VENTUS 3X OC",
+		"price": 443650.00,
+		"thumbnail": "https://shre.ink/ld2z",
+		"code": 10724,
+		"stock": 1
+    },{
+        "id": 10,
+		"title": "SSD M.2",
+		"descripcion": "Disco Solido SSD M.2 Team 2TB Cardea Zero Z440 5000MB/s PCIe Gen4",
+		"price": 149650.00,
+		"thumbnail": "https://shre.ink/ld2W",
+		"code": 11726,
+		"stock": 9
+    }
+]
