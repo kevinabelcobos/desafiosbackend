@@ -1,0 +1,49 @@
+<section>
+  <div class="titulo">
+    <h2>Productos disponibles </h2>
+  </div>
+</section>
+
+<section>
+  <div>
+    <nav class="nav nav-home contenedor">
+      <a href="/">Volver al inicio</a>
+      <a href="/realTimeProducts">Trabajar con los Productos</a>
+    </nav>
+  </div>
+</section>
+
+<section>
+  <div class="contenedor-1">
+    <table border="1">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>TITLE</td>
+          <td>DESCRIPCION</td>
+          <td>CODE</td>
+          <td>PRICE</td>
+          <td>STATUS</td>
+          <td>STOCK</td>
+          <td>CATEGORY</td>
+          <td>THUMBAIL</td>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each products}}
+          <tr>
+            <td>{{this._id}}</td>
+            <td>{{this.title}}</td>
+            <td>{{this.descripcion}}</td>
+            <td>{{this.code}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.status}}</td>
+            <td>{{this.stock}}</td>
+            <td>{{this.category}}</td>
+            <td>{{this.thumbail}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>

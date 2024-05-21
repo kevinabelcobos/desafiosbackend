@@ -1,0 +1,93 @@
+<section class="titulo">
+  <h2>Manejo de Productos en Tiempo Real</h2>
+</section>
+
+<section>
+  <div>
+    <nav class="nav nav-home contenedor">
+      <a href="/">Volver al inicio</a>
+      <a href="/home">Ver los productos</a>
+    </nav>
+  </div>
+</section>
+
+<section class="list-product">
+  <h3>Listado de productos en tiempo real</h3>
+  <div class="contenedor-1">
+    <table border="1">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>TITLE</td>
+          <td>DESCRIPCION</td>
+          <td>CODE</td>
+          <td>PRICE</td>
+          <td>STATUS</td>
+          <td>STOCK</td>
+          <td>CATEGORY</td>
+          <td>THUMBAIL</td>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        {{#each products}}
+          <tr>
+            <td>{{this._id}}</td>
+            <td>{{this.title}}</td>
+            <td>{{this.descripcion}}</td>
+            <td>{{this.code}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.status}}</td>
+            <td>{{this.stock}}</td>
+            <td>{{this.category}}</td>
+            <td>{{this.thumbail}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="formulario-realTimeProducts">
+    <h3>Crear Productos</h3>
+    <form id="formCreate">
+      <label for="title">Title</label>
+      <input type="text" name="title" />
+      <label for="descripcion">Descripcion</label>
+      <input type="text" name="descripcion" />
+      <label for="code">Code</label>
+      <input type="text" name="code" />
+      <label for="price">Price</label>
+      <input type="number" name="price" />
+      <label for="status">Status</label>
+      <select name="status">
+        <option selected="" disabled>Seleccione una opcion</option>
+        <option value="0">true</option>
+        <option value="1">false</option>
+      </select>
+      <label for="stock">Stock</label>
+      <input type="number" name="stock" />
+      <label for="category">category</label>
+      <input type="text" name="category" />
+      <label for="thumbail">Thumbail</label>
+      <input type="text" name="thumbail" />
+      <button type="submit" id="create">Crear Producto</button>
+    </form>
+    <p>Recuerde que para crear productos no pueden crearse productos con code
+      repetido, ni tampoco productos con campos vacios salvo stock que por
+      defecto es true.
+    </p>
+  </div>
+  <div class="formulario-delete">
+    <h3>Eliminar productos</h3>
+    <form id="formDelete">
+      <label for="id">ID</label>
+      <input type="text" name="id" />
+      <button type="submit" id="create">Eliminar producto</button>
+      <hr />
+    </form>
+  </div>
+</section>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>

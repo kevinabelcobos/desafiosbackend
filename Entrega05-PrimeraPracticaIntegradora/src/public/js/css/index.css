@@ -1,0 +1,280 @@
+/*Generales*/
+:root {
+    /**Paleta de Colores**/
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+    /**Tipos de fuentes**/
+    --fuente-principal: font-family: 'Krub', sans-serif;
+    --fuente-secundaria: font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Codigo que se aplica en todo el html*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*1rem ->10px*/
+    box-sizing: border-box;
+    scroll-snap-type: y proximity;
+}
+
+/*Este codigo sirve para detener el scroll en secciones determinadas para que sea mas facil navegar*/
+.servicio,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*Le sacamos el borde al body de 16px*/
+    box-sizing: border-box;
+}
+
+/*codigo que se aplica a todo el body*/
+body {
+    font-size: 16px;
+    /* 1rem = 10px */
+    font-family: 'Krub', sans-serif;
+    /*Todos los textos van a tener esta fuente*/
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--secundario);
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+.acceso-index {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primario);
+    padding: 5rem;
+    margin-top: 2rem;
+}
+
+.acceso-index h3 {
+    color: var(--gris);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.nav {
+    background-color: var(--blanco);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav a {
+    background-color: var(--secundario);
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.nav a span {
+    font-size: 1.2rem;
+}
+
+.nav a:hover {
+    color: var(--oscuro);
+    background-color: var(--primario);
+}
+
+/* spacing */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+    margin-top: 2rem;
+    margin: 2rem 0;
+}
+
+thead td:nth-child(1) {
+    width: 14%;
+    text-align: center;
+}
+
+thead td:nth-child(2) {
+    width: 7%;
+    text-align: center;
+}
+
+thead td:nth-child(3) {
+    width: 15%;
+    text-align: center;
+}
+
+thead td:nth-child(4) {
+    width: 5%;
+    text-align: center;
+}
+
+thead td:nth-child(5) {
+    width: 5%;
+    text-align: center;
+}
+
+thead td:nth-child(6) {
+    width: 5%;
+    text-align: center;
+}
+
+thead td:nth-child(7) {
+    width: 5%;
+    text-align: center;
+}
+
+thead td:nth-child(8) {
+    width: 10%;
+    text-align: center;
+}
+
+thead td:nth-child(9) {
+    width: 12%;
+    text-align: center;
+}
+
+td,
+td {
+    padding: 20px;
+}
+
+td {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+.contenedor-1 {
+    max-width: 185rem;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: var(--secundario);
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.nav-home {
+    background-color: var(--grisClaro);
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--secundario);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+form label {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+
+form input[type="text"],
+input[type="number"] {
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: var(--blanco);
+    margin: 8px 0;
+
+}
+
+form input[type="submit"] {
+    width: 2rem;
+    padding: 1rem;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.titulo-realTimeProducts {
+
+    text-align: center;
+
+}
+
+.formulario-realTimeProducts {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formulario-realTimeProducts p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.formulario-delete {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.list-product {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
