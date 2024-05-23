@@ -1,0 +1,24 @@
+{
+  "name": "entregapracticaintegradora",
+  "version": "1.0.0",
+  "description": "Este desafio corresponde a la primera practica integradora del curso de desarrollo backend coderhouse.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dario Lopez",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "connect-mongo": "^5.0.0",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.0",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.4.1",
+    "mongoose-paginate-v2": "^1.7.31",
+    "socket.io": "^4.7.1"
+  }
+}

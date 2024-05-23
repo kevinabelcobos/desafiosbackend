@@ -1,0 +1,492 @@
+/*Generales*/
+:root {
+    /**Paleta de Colores**/
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+    /**Tipos de fuentes**/
+    --fuente-principal: font-family: 'Krub', sans-serif;
+    --fuente-secundaria: font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Codigo que se aplica en todo el html*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*1rem ->10px*/
+    box-sizing: border-box;
+    scroll-snap-type: y proximity;
+}
+
+/*Este codigo sirve para detener el scroll en secciones determinadas para que sea mas facil navegar*/
+.servicio,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*Le sacamos el borde al body de 16px*/
+    box-sizing: border-box;
+}
+
+/*codigo que se aplica a todo el body*/
+body {
+    font-size: 16px;
+    /* 1rem = 10px */
+    font-family: 'Krub', sans-serif;
+    /*Todos los textos van a tener esta fuente*/
+}
+
+.contenedor {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.nav-index {
+    background-color: var(--secundario);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-principal {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--secundario);
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.nav-principal a {
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.nav-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+
+.img-bg {
+    background-image: url('../../d56679ff686f01d5e125154071ac69222fb6debc_COMPRA-LO-MEJOR.png');
+    height: 60rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.nav a {
+    background-color: var(--secundario);
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.nav a span {
+    font-size: 1.2rem;
+}
+
+.nav a:hover {
+    color: var(--oscuro);
+    background-color: var(--primario);
+}
+
+/* spacing */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+    margin-top: 2rem;
+    margin: 2rem 0;
+}
+
+thead td:nth-child(1) {
+    width: 14%;
+    text-align: center;
+}
+
+thead td:nth-child(2) {
+    width: 7%;
+    text-align: center;
+}
+
+thead td:nth-child(3) {
+    width: 15%;
+    text-align: center;
+}
+
+thead td:nth-child(4) {
+    width: 5%;
+    text-align: center;
+}
+
+thead td:nth-child(5) {
+    width: 5%;
+    text-align: center;
+}
+
+thead td:nth-child(6) {
+    width: 5%;
+    text-align: center;
+}
+
+thead td:nth-child(7) {
+    width: 5%;
+    text-align: center;
+}
+
+thead td:nth-child(8) {
+    width: 10%;
+    text-align: center;
+}
+
+thead td:nth-child(9) {
+    width: 12%;
+    text-align: center;
+}
+
+td,
+td {
+    padding: 20px;
+}
+
+td {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+.contenedor-1 {
+    max-width: 185rem;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: var(--secundario);
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.nav-home {
+    background-color: var(--grisClaro);
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 2rem auto;
+    background-color: var(--secundario);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+form select{
+    margin: 2rem 0;
+}
+
+form label {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--blanco);
+    margin: 2rem 0;
+}
+
+form option{
+    margin: 2rem 0;
+}
+
+form input[type="text"],
+input[type="number"] {
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: var(--blanco);
+    margin: 8px 0;
+}
+
+form input[type="submit"] {
+    width: 2rem;
+    padding: 1rem;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+    margin: 2rem 0;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.titulo-realTimeProducts {
+
+    text-align: center;
+
+}
+
+.formulario-realTimeProducts {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formulario-realTimeProducts p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.formulario-delete {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.list-product {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.about-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--gris);
+    padding: 2rem;
+    color: var(--blanco);
+    margin-top: 2rem;
+}
+
+.texto {
+    grid-column-end: 2;
+    grid-column-start: 1;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--blanco);
+    padding: 2rem;
+}
+
+.texto p {
+    margin-top: 2rem;
+}
+
+.imagen {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.img-blog {
+    background-image: url('../../Ordenador-PC-Gaming-IP.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto auto;
+}
+
+.contacto {
+    background-color: var(--secundario);
+    margin-top: 2rem;
+    color: var(--blanco);
+    padding: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.card{
+    background-color: var(--secundario);
+    padding: 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.cards img {
+    max-height: 250px;
+    margin: 0 auto;
+}
+
+.card-title{
+   color: var(--blanco);
+   text-align: center; 
+   font-size: 1.8rem;
+   text-transform: uppercase;
+   margin-top: 2rem;
+}
+
+.card-stock{
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.card-price{
+    color: var(--blanco);
+    text-align: center; 
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+ }
+
+.card-enlace{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: var(--primario);
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 0.3rem;
+}
+
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+._id{
+    margin-top: 2rem;
+    color: var(--blanco);
+}
+
+.chat h1{
+    text-transform: uppercase;
+}
+
+.img-chatbox{
+    background-image: url('../../maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2rem;
+}
+
+.pagination{
+    background-color: var(--secundario);
+}
+
+.contenedor3{
+    max-width: 20%;
+    margin:2rem auto;
+    border-radius: 2%;
+}
+
+.pagination-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pagination-container a,.pagination-text{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--blanco);
+    padding: 1.5rem;
+}
+
+.categorias a{
+    text-transform: uppercase;
+    color: var(--blanco);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.categorias a:hover{
+    color: var(--primario);
+}
+
+.categorias-contenedor{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    place-items: center;
+    max-width: 80%;
+    margin: 2rem auto;
+    background-color: var(--secundario);
+    padding: 0.5rem;
+}
+
+.titulo-categoria{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.button-filter{
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.quantity{
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--blanco);
+}

@@ -1,0 +1,122 @@
+<section class="titulo">
+  <h1>Manejo de Productos en Tiempo Real</h1>
+</section>
+
+<section>
+  <div class="nav-bg">
+    <nav class="nav-principal">
+      <a href="/">Volver al inicio</a>
+      <a href="/home">Ver los productos</a>
+      <a href="./products">Comprar productos</a>
+      <a href="./chat">Soporte</a>
+    </nav>
+  </div>
+</section>
+
+<section>
+  <h2 class="titulo-categoria">Categorias</h2>
+  <form id="form-category">
+    <label>Seleccione una categoria</label>
+    <select name="categorys">
+      <option selected="" disabled>Seleccione una opcion</option>
+      {{#each categorys.docs}}
+        <option value="{{this.name}}">{{this.name}}</option>
+      {{/each}}
+    </select>
+    <label>Ordernar por precio</label>
+    <select name="sort" id="price">
+      <option selected="" disabled>Seleccione una opcion</option>
+      <option value="1">Menor Precio</option>
+      <option value="-1">Mayor Precio</option>
+      <option value="0">No ordenar</option>
+    </select>
+    <button class="button-filter" type="submit">FILTRAR</button>
+    <a class="card-enlace" href="/home">Volver</a>
+  </form>
+  <h2 class="titulo-categoria">Todos los productos</h2>
+</section>
+
+<section class="cards contenedor" id="cards-product">
+  {{#each products.docs}}
+    <div class="card" style="width: 30rem;">
+      <img class="card-img-top" src="{{this.thumbail}}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>
+        <p class="card-stock">Stock: {{this.stock}}</p>
+        <p class="card-price">${{this.price}}</p>
+        <p class="_id">ID: {{this._id}}</p>
+        <button type="submit">Add to cart</button>
+      </div>
+    </div>
+  {{/each}}
+</section>
+
+<section class="pagination contenedor3">
+  <div class="pagination-container">
+    {{#if products.hasPrevPage}}
+      <a href={{products.prevLink}}>Anterior</a>
+    {{/if}}
+    {{#if prevPageValidate}}
+      <a href={{products.prevLink}}>{{products.prevPage}}</a>
+    {{/if}}
+    {{#if products.page}}
+      <p class="pagination-text">{{products.page}}</p>
+    {{/if}}
+    {{#if products.nextPageValidate}}
+      <a href={{products.nextLink}}>{{products.nextPage}}</a>
+    {{/if}}
+    {{#if products.hasNextPage}}
+      <a href={{products.nextLink}}>Siguiente</a>
+    {{/if}}
+  </div>
+</section>
+
+<section>
+  <div class="formulario-realTimeProducts">
+    <h3>Crear Productos</h3>
+    <form id="formCreate">
+      <label for="title">Title</label>
+      <input type="text" name="title" />
+      <label for="descripcion">Descripcion</label>
+      <input type="text" name="descripcion" />
+      <label for="code">Code</label>
+      <input type="text" name="code" />
+      <label for="price">Price</label>
+      <input type="number" name="price" />
+      <label for="status">Status</label>
+      <select name="status">
+        <option selected="" disabled>Seleccione una opcion</option>
+        <option value="0">true</option>
+        <option value="1">false</option>
+      </select>
+      <label for="stock">Stock</label>
+      <input type="number" name="stock" />
+      <label for="category">category</label>
+      <select name="category">
+        <option selected="" disabled>Seleccione una opcion</option>
+        {{#each categorys.docs}}
+          <option value="{{this.name}}">{{this.name}}</option>
+        {{/each}}
+      </select>
+      <label for="thumbail">Thumbail</label>
+      <input type="text" name="thumbail" />
+      <button type="submit" id="create">Crear Producto</button>
+    </form>
+    <p>Recuerde que para crear productos no pueden crearse productos con code
+      repetido, ni tampoco productos con campos vacios salvo stock que por
+      defecto es true.
+    </p>
+  </div>
+  <div class="formulario-delete">
+    <h3>Eliminar productos</h3>
+    <form id="formDelete">
+      <label for="id">ID</label>
+      <input type="text" name="id" />
+      <button type="submit" id="create">Eliminar producto</button>
+      <hr />
+    </form>
+  </div>
+</section>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>

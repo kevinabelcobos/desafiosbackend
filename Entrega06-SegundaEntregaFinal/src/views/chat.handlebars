@@ -1,0 +1,50 @@
+<section>
+  <div class="titulo">
+    <h1>Bienvenidos al area de soporte!</h1>
+  </div>
+</section>
+
+<section>
+  <div class="nav.bg" style="margin-bottom:2rem;">
+    <nav class="nav-principal">
+      <a href="/">Volver al inicio</a>
+      <a href="/realTimeProducts">Trabajar con los Productos</a>
+      <a href="./home">Visualizar los productos</a>
+    </nav>
+  </div>
+</section>
+
+<h2
+  class="chat"
+  style="font-size: 30px; text-align:center; margin-bottom:2rem;"
+>Bienvido al Chat
+  <b id="username"></b>!</h2>
+
+<div
+  style="display: grid; grid-template-rows:repeat(2,1fr); justify-content: center;"
+>
+  <div class="card-chat" style="box-shadow: 0px 0px 10px #969696;">
+    <div><p class="text-center m-0"><b>Historial</b></p></div>
+    <hr style="margin: 2px 0 2px 0;" />
+    <div id="logs" style="margin: 5px; width: 400px; height: 200px;">
+      {{#each messages}}
+        <p><b>{{user}}:</b>
+          {{message}}<i
+            style="font-size: x-small; margin-left: 5px;"
+          >{{hour}}</i></p>
+      {{/each}}
+    </div>
+  </div>
+  <div style="margin-top:2rem ;">
+    <b>Escribe algo:</b>
+    <input id="chatbox" />
+    <div class="img-chatbox" style="height: 400px; width:700px"></div>
+  </div>
+</div>
+
+{{! SweetAlert }}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{{! Socket.io }}
+<script src="/socket.io/socket.io.js"></script>
+{{! Logica de Socket.io }}
+<script src="/js/chat.js"></script>

@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "title": "Memoria Ram",
+    "descripcion": "Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black",
+    "code": "9542",
+    "price": 39550,
+    "status": true,
+    "stock": 10,
+    "category": "MEMORIAS RAM",
+    "thumbail": "https://acortar.link/HgeG0G"
+  },
+  {
+    "id": 2,
+    "title": "Notebook",
+    "descripcion": "Notebook Gamer Acer Nitro 5 15.6",
+    "code": "14320",
+    "price": 465990,
+    "status": true,
+    "stock": 3,
+    "category": "EQUIPOS Y NOTEBOOK",
+    "thumbail": "https://acortar.link/SLS5hS"
+  },
+  {
+    "id": 3,
+    "title": "Gabinete",
+    "descripcion": "Gabinete Kolink Inspire K3 RGB  M-ATX Vidrio Templado",
+    "code": "10429",
+    "price": 25700,
+    "status": true,
+    "stock": 5,
+    "category": "GABINETES",
+    "thumbail": "https://acortar.link/BmqxdQ"
+  },
+  {
+    "id": 4,
+    "title": "Auriculares",
+    "descripcion": "Auriculares Gamer Wesdar GH31 Black RGB RCA Y-Adapter",
+    "code": "14517",
+    "price": 2999.99,
+    "status": true,
+    "stock": 20,
+    "category": "PERIFERICOS",
+    "thumbail": " https://acortar.link/nOeJoq"
+  },
+  {
+    "id": 5,
+    "title": "Procesador",
+    "descripcion": "Procesador AMD Ryzen 9 5950X 4.9GHz Turbo AM4 - No incluye Cooler",
+    "code": "11022",
+    "price": 388900,
+    "status": true,
+    "stock": 4,
+    "category": "PROCESADORES",
+    "thumbail": "https://acortar.link/dPclDN"
+  },
+  {
+    "id": 6,
+    "title": "Silla Gamer",
+    "descripcion": "Silla Gamer Vertagear Racing Series PL-4500 Crystals from Swarovski",
+    "code": "13786",
+    "price": 359100,
+    "status": true,
+    "stock": 7,
+    "category": "SILLAS GAMER",
+    "thumbail": "https://acortar.link/9sge4g"
+  },
+  {
+    "id": 7,
+    "title": "Fuente de alimentacion",
+    "descripcion": "Fuente ASUS TUF 550W 80 Plus Bronze 550B",
+    "code": "11265",
+    "price": 39000,
+    "status": true,
+    "stock": 8,
+    "category": "FUENTES",
+    "thumbail": "https://acortar.link/O101XI"
+  },
+  {
+    "id": 8,
+    "title": "Mother",
+    "descripcion": "Mother Asrock X670E Taichi Carrara AM5",
+    "code": "14199",
+    "price": 418600,
+    "status": true,
+    "stock": 1,
+    "category": "MOTHERS",
+    "thumbail": "https://acortar.link/IyArrf"
+  },
+  {
+    "id": 9,
+    "title": "Placa de video",
+    "descripcion": "Placa de Video MSI GeForce RTX 3090 24GB GDDR6X VENTUS 3X OC",
+    "code": "10724",
+    "price": 443650,
+    "status": true,
+    "stock": 1,
+    "category": "PLACAS DE VIDEO",
+    "thumbail": "https://acortar.link/30A3SX"
+  },
+  {
+    "id": 10,
+    "title": "SSD M.2",
+    "descripcion": "Disco Solido SSD M.2 Team 2TB Cardea Zero Z440 5000MB/s PCIe Gen4",
+    "code": "11726",
+    "price": 149650,
+    "status": true,
+    "stock": 9,
+    "category": "Almacenamiento",
+    "thumbail": "https://acortar.link/jygvaU"
+  },
+  {
+    "id": 11,
+    "title": "memoria ram",
+    "descripcion": "Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black",
+    "code": "AAA8",
+    "price": 1,
+    "status": true,
+    "stock": 1,
+    "category": "Almacenamiento",
+    "thumbail": "https://acortar.link/HgeG0G"
+  },
+  {
+    "id": 12,
+    "title": "memoria ram",
+    "descripcion": "Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black",
+    "code": "ABC123",
+    "price": 1,
+    "status": true,
+    "stock": 1,
+    "category": "Almacenamiento",
+    "thumbail": "https://acortar.link/HgeG0G"
+  },
+  {
+    "id": 13,
+    "title": "memoria ram",
+    "descripcion": "Memoria GeiL DDR4 16GB 3000MHz Super Luce RGB Black",
+    "code": "CCC",
+    "price": 1,
+    "status": false,
+    "stock": 1,
+    "category": "Almacenamiento",
+    "thumbail": "https://acortar.link/HgeG0G"
+  }
+]

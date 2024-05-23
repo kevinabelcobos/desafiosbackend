@@ -1,0 +1,53 @@
+<section>
+  <div class="titulo">
+    <h1>Productos disponibles </h1>
+  </div>
+</section>
+
+
+<section>
+  <div class="nav.bg">
+    <nav class="nav-principal">
+      <a href="/">Volver al inicio</a>
+      <a href="/realTimeProducts">Trabajar con los Productos</a>
+      <a href="./chat">Soporte</a>
+    </nav>
+  </div>
+</section>
+
+<section class="cards contenedor" id="cards-product">
+  {{#each products.docs}}
+    <div class="card" style="width: 30rem;">
+      <img class="card-img-top" src="{{this.thumbail}}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>
+        <p class="card-stock">Stock: {{this.stock}}</p>
+        <p class="card-price">${{this.price}}</p>
+        <p class="_id">ID: {{this._id}}</p>
+        <button onclick="addProduct('{{this._id}}')" class="btn btn-primary">Agregar al carrito</button>
+      </div>
+    </div>
+  {{/each}}
+</section>
+
+<section class="pagination contenedor3">
+  <div class="pagination-container">
+    {{#if products.hasPrevPage}}
+      <a href={{products.prevLink}}>Anterior</a>
+    {{/if}}
+    {{#if products.prevPageValidate}}
+      <a href={{products.prevLink}}>{{products.prevPage}}</a>
+    {{/if}}
+    {{#if products.page}}
+      <p class="pagination-text">{{products.page}}</p>
+    {{/if}}
+    {{#if products.nextPageValidate}}
+      <a href={{products.nextLink}}>{{products.nextPage}}</a>
+    {{/if}}
+    {{#if products.hasNextPage}}
+      <a href={{products.nextLink}}>Siguiente</a>
+    {{/if}}
+  </div>
+</section>
+
+<script src="/js/cart.js"></script>

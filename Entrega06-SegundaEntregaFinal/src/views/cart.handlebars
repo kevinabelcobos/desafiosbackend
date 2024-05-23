@@ -1,0 +1,17 @@
+<section class="cards contenedor" id="cards-product">
+  {{#each cart.products}}
+    <div class="card" style="width: 30rem;">
+      <img class="card-img-top" src="{{pid.thumbail}}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">{{{pid.title}}}</h5>
+        <p class="card-stock">Stock: {{pid.stock}}</p>
+        <p class="card-price">${{{pid.price}}}</p>
+        <p class="_id">ID: {{this._id}}</p>
+        <h5 class="quantity">Quantity:{{quantity}}</h5>
+        {{!-- <button onclick="deleteProduct('{{this._id}}')" class="btn btn-primary">Eliminar del carrito</button> --}}
+      </div>
+    </div>
+  {{/each}}
+</section>
+
+<script src="/js/cart.js"></script>
